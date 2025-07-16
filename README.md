@@ -1,8 +1,10 @@
-# 🧠 Jogo do Número Secreto
+# 🎯 Jogo do Número Secreto
 
-Projeto desenvolvido como parte do curso **"Lógica de Programação: explore funções e listas"** da [Alura](https://www.alura.com.br/), com foco no uso de **funções**, **manipulação de DOM** e **interação via input** com **JavaScript puro**.
+Projeto desenvolvido durante o curso **"Lógica de Programação: explore funções e listas"** da [Alura](https://www.alura.com.br/), com foco na prática de **funções**, **listas (arrays)**, **controle de fluxo** e **interação com o DOM** em **JavaScript puro**.
 
-O jogo escolhe um número aleatório entre 1 e 10, e o jogador deve acertar o valor com tentativas interativas.
+O jogo consiste em adivinhar um número secreto aleatório entre 1 e 10, com narração por voz e feedback visual. A cada rodada, o jogo garante que o número sorteado ainda não foi usado anteriormente.
+
+---
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -12,26 +14,46 @@ O jogo escolhe um número aleatório entre 1 e 10, e o jogador deve acertar o va
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
 </p>
 
-- HTML semântico e estruturado
-- CSS básico para estilização
-- JavaScript para lógica de jogo e interação com o DOM
-- Geração de número aleatório com `Math.random()`
-- Manipulação de elementos com `querySelector()` e `innerHTML`
+---
 
-## 🎯 Funcionalidades
+## ✅ Funcionalidades
 
-- Geração de número secreto aleatório entre 1 e 10
-- Entrada de dados via campo `<input>`
-- Feedback imediato ao jogador ("Acertou", "Maior", "Menor")
-- Interface amigável com botões de interação
+- Número secreto aleatório entre 1 e 10
+- Garante que o número não se repita até esgotar as possibilidades
+- Contador de tentativas
+- Feedback visual com título e parágrafo atualizados
+- Narração por voz (via [ResponsiveVoice](https://responsivevoice.org))
+- Botão para reiniciar o jogo, com reset de tentativas
+- Interface responsiva e amigável
+
+---
+
+## 🔊 Sobre a Narração por Voz
+Este projeto utiliza a API externa ResponsiveVoice para narrar os textos exibidos na tela.
+A funcionalidade de voz é compatível com a maioria dos navegadores, mas **funciona melhor no Google Chrome**.
+No Firefox e Edge, a reprodução pode não ocorrer corretamente ou exigir permissões extras.
+
+## ▶️ Como Usar
+Abra o arquivo `index.html` em um navegador (preferencialmente Chrome) utilizando a extensão `LiveServer`.
+
+Escolha um número entre 1 e 10 no campo de input.
+
+Clique no botão "Chutar".
+
+O jogo informará se o número é maior ou menor que o secreto — e irá falar a resposta.
+
+Ao acertar, será exibida a quantidade de tentativas e liberado o botão "Novo jogo".
+
+Clique em "Novo jogo" para reiniciar a rodada.
 
 ## 📌 Status do Projeto
 
-✅ Concluído como parte do módulo introdutório de lógica de programação  
-🔜 Pode ser expandido com contagem de tentativas, reinício de jogo e narração com voz
+✅ Finalizado e funcional  
+🧠 Utilizado para reforço de lógica, listas e manipulação do DOM  
+🔊 Narrativa por voz implementada com biblioteca externa
+
+---
 
 ## 👨‍💻 Autor
 
 [Victor Rodrigues (victormelkor)](https://github.com/victormelkor)
-
----
